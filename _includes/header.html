@@ -1,4 +1,14 @@
-<header class="site-header" role="banner">
+<div class="appbar-fixed animated fadeIn">
+<div class="app-header">
+  <a href="#" class="app-name left">{{ site.title | escape }}</a>
+  <ul class="right app-header-links">
+      <li><a href="#">Anmelden</a></li>
+      <li><a href="#">Registrieren</a></li>
+  </ul>
+</div>
+</div>
+
+<!-- <header class="site-header" role="banner">
 
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
@@ -29,4 +39,4 @@
       </nav>
     {% endif %}
   </div>
-</header>
+</header> -->

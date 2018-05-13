@@ -1,0 +1,56 @@
+---
+layout: default
+---
+{% assign sorted_pages = site.pages | sort:"order" %}
+
+<div class="hero primary white-text animated fadeIn">
+    <div class="hero-content">
+        <ul>
+            <li>
+                <div class="display2 white-text animated fadeInDown">Aerondo Documentation</div>
+            </li>
+            <li>
+                <h5 class="animated fadeInDown">Aerondo provices tools and services to manage your general aviation data.</h5>
+            </li>
+            <li>
+                <a target="_blank" href="/pages/log-in.html" class="btn btn-lg animated fadeInLeft" rel="nofollow">Anmelden</a>
+                <a target="_blank" href="#" class="btn primary btn-lg animated fadeInRight" rel="nofollow">Registrieren</a>
+            </li>
+        </ul>
+    </div>
+</div>
+ 
+
+<div class="white">
+    <div class="row">
+        <div class="col s12 display1">Aerondo Documentation</div>
+    </div>
+    <div class="row">
+        <div class="col s12 flow-text">Welcome! We are exciated that you want to learn more about Aerondo and the features of the platform. On the following
+            sites you find helpful information about each single feature offered by Aerondo and hints how to use them. </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <blockquote>
+                Please be aware that further development of Aerondo is driven by the community. If you are missing any features or you have
+                ideas for improvements don't hesitate to let us know. In the case you want to send us a Feature request or
+                a proposal for an improvement have a look to our issues on GitHub. If there is no issue describing your request
+                there, just create a new one.ne.
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="row no-margin">
+        <div class="col s12 m6 xl3 center-align heading-margin">
+            <i class="aerondo-icons pilot large"></i>
+            <div class="headline">For Pilots</div>
+            <ul class="bounce-list">
+                {% for page in sorted_pages %} {% if page.section == 'pilots' %}
+                <li>
+                    <a href="{{page.url}}">{{page.title}}</a>
+                </li>
+                {% endif %} {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

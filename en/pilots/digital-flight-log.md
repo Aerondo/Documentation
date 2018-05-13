@@ -9,7 +9,7 @@ You can use the **Digital Flight Log** to record all of your flights in a digita
 
 ![Digital Flight Log Screenshot]({{ "/assets/pilots/digital-flight-log.png" | absolute_url }})
 
-### Create a new Flight Log Entry
+## Create a new Flight Log Entry
 When developing this feature we took a lot of effort to ensure this feature works without constraints on mobile screens. With just a few taps you can input a complete flight with all data using your mobile. This way it is as easy as possible to input a new flight log entry directly after your flight. 
 
 To create a new flight tap "New" or swipe left to bring up the input form. The input form is intelligent and proposes you known aircrafts, co-pilots, etc. as soon as you typed the first letters and the aircrafts, co-pilots, etc. are known to Aerondo.
