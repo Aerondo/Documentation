@@ -5,4 +5,8 @@
 layout: home
 ---
 
-[English](/en/sitemap)
+[English Documentation](/en/sitemap)
+
+[German Documentation](/de/sitemap)
+
+[Blog](/blog/index)

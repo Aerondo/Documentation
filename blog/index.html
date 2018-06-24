@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="hero small primary white-text animated fadeIn">
+    <div class="hero-content">
+        <ul>
+            <li>
+                <div class="display2 white-text animated fadeInDown">Aerondo Blog</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row white">
+  <div class="col m1 l2 hide-on-small"></div>
+  <div class="col s12 m8 l8">
+    <div class="title heading-margin filter-active-indicator" style="display: none">All posts with tag <span class="filter-active-tag"></span></div>
+    {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="caption">{{ post.date | date: date_format }}</span>
+        <div>
+          <a class="primary-text display1" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </div>
+        <span class="caption">Author: {{post.author}}</span> - <span class="caption post-tags">Tags: {{ (post.tags | join: ', ') | replace: '-', ' ''}}</span>
+        {% if site.show_excerpts %}
+          {{ post.excerpt }}
+        {% endif %}
+        <br />
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col s12 m2 l2">
+      <p class="rss-subscribe">Subscribe to blog <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </div>
+  <div class="col s12 m2 l2 title">Tags</div>
+  <div class="col s12 m2 l2">
+    <ul>
+      {% assign sorted_tags = site.tags | sort %}
+      {% for tag in sorted_tags %}
+        {% assign t = tag | first | replace: '-', ' ' %}
+        {% assign posts = tag | last %}
+        <li><a onclick="filterPosts('{{ t }}')">{{t }} ({{ posts | size }})</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+
+</div>

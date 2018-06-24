@@ -12,6 +12,26 @@
 
     {% include footer.html %}
 
+
+    <script>
+        function filterPosts(tag) {
+          console.log('filtering posts...')
+          var filterActiveIndicatorElement = document.getElementsByClassName('filter-active-indicator');
+          filterActiveIndicatorElement[0].style.display = 'block';
+          var filterActiveTagElement = document.getElementsByClassName('filter-active-tag');
+          filterActiveTagElement[0].innerHTML = tag;
+          var postTags = document.getElementsByClassName('post-tags');
+          for(var i=0; i < postTags.length; i++) {
+            var postTagsElement = postTags[i];
+            var postElement = postTagsElement.parentNode;
+            if(postTagsElement.innerHTML.indexOf(tag) == -1) {
+              postElement.style.display = 'none';
+            } else {
+              postElement.style.display = 'block';
+            }
+          }
+        }
+      </script>
   </body>
 
 </html>
