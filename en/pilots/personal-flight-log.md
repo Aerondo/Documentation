@@ -1,20 +1,19 @@
 ---
 layout: page
-title: Digital Flight Log
+title: Personal Flight Log
 section: pilots
+lang: en
 order: 01
 ---
 
-You can use the **Digital Flight Log** to record all of your flights in a digital way to benefit from Aerondos extensive management and analytics features related to flight logs. The following screenshot gives you an idea of how this features looks on mobile and on lager screens.
+You can use the **Personal Flight Log** to record all of your flights in a digital way to benefit from Aerondos extensive management and analytics features related to flight logs. The following screenshot gives you an idea of how this features looks like.
 
-![Digital Flight Log Screenshot]({{ "/assets/pilots/digital-flight-log.png" | absolute_url }})
+![Digital Flight Log Screenshot]({{ "/assets/de/pilots/digital-flight-log.png" | absolute_url }})
 
 ## Create a new Flight Log Entry
 When developing this feature we took a lot of effort to ensure this feature works without constraints on mobile screens. With just a few taps you can input a complete flight with all data using your mobile. This way it is as easy as possible to input a new flight log entry directly after your flight. 
 
 To create a new flight tap "New" or swipe left to bring up the input form. The input form is intelligent and proposes you known aircrafts, co-pilots, etc. as soon as you typed the first letters and the aircrafts, co-pilots, etc. are known to Aerondo.
-
-The screenshot below shows the input form to create a new flight log entry.
 
 > **A Note to Substitude your Paper Flight Log**
 >

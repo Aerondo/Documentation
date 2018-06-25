@@ -27,7 +27,7 @@ layout: default
             {{ post.title | escape }}
           </a>
         </div>
-        <span class="caption">Author: {{post.author}}</span> - <span class="caption post-tags">Tags: {{ (post.tags | join: ', ') | replace: '-', ' ''}}</span>
+        <span class="caption">Author: {{post.author}}</span> - <span class="caption post-tags">Tags: {{ post.tags | join: ', ' | replace: '-', ' ' }}</span>
         {% if site.show_excerpts %}
           {{ post.excerpt }}
         {% endif %}

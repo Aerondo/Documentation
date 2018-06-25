@@ -33,11 +33,10 @@ layout: default
         <div class="col s12 title">What is Aerondo</div>
         <div class="col s12">
             Aerondo is your ideal partner when it is about managment of data originating from general aviation. Whether you want to manage your personal information, 
-            the data of an aircraft, an aerodrome or an organisation (a company or a association) Aerondo has tools that make your life easier. Aerondo is a web 
-            application built on the latest web and cloud technologies. This means you don't have to install something on the devices from which you want to use Aerondo. 
-            You just need a browser to sign up for a new account and to log in. In addition to that you can use Aerdondo from any device you want, no matter weather it 
-            is a smartphone, a tablet or a desktop pc. Using Aerondo means you have your data and the management tools always with you on your smartphone and available 
-            on every other device you want to use to mange your general aviation data.
+            the data of an aircraft, an aerodrome or an organisation (a company or an association), alone or together with other people, Aerondo has tools that make your life easier. Aerondo is a web 
+            application built on the latest web and cloud technologies. This means you don't need to install something but can use Aerondo on any device you want to. 
+            You just need a browser to sign up for a new account and to log in. Then you are all set and ready to use Aerondo. Using Aerondo means you have your data 
+            and the management tools always with you on your smartphone and available on every other device you want to use to mange your general aviation data.
         </div>
     </div>
 
@@ -57,7 +56,7 @@ layout: default
             <i class="aerondo-icons pilot large"></i>
             <div class="headline">For Pilots</div>
             <ul class="bounce-list">
-                {% for page in sorted_pages %} {% if page.section == 'pilots' %}
+                {% for page in sorted_pages %} {% if page.section == 'pilots' and page.lang == 'en' %}
                 <li>
                     <a href="{{page.url}}">{{page.title}}</a>
                 </li>
@@ -71,7 +70,7 @@ layout: default
             <blockquote>
                 Please be aware that further development of Aerondo is driven by the community. If you are missing any features or you have
                 ideas for improvements don't hesitate to let us know. In the case you want to send us a Feature request or
-                a proposal for an improvement have a look to our issues on GitHub. If there is no issue describing your request
+                a proposal for an improvement have a look to our issues on <a href="https://github.com/Aerondo/Home/issues" target="blank">GitHub</a>. If there is no issue describing your request
                 there, just create a new one.ne.
             </blockquote>
         </div>

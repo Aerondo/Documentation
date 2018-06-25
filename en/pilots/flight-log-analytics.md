@@ -2,6 +2,7 @@
 layout: page
 title: Flight Log Analytics
 section: pilots
+lang: en
 order: 02
 ---
 
@@ -10,8 +11,6 @@ Use the **Flight Log Analytics** feature to get insight into your flight activit
 * Which aerodrome was the one on which i made the most landings in the past year?
 * How much hours did I fly on a specific aircraft?
 * etc.
-
-The screenshot below shows you how this feature looks like. You can also use it without constraints on mobile devices. 
 
 
 ### Filtering Data
