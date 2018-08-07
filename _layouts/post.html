@@ -6,7 +6,7 @@ layout: default
   <div class="row no-margin">
     <div class="col m1 l3 hide-on-small"></div>
     <div class="col s12 m10 l6 white">
-      <div class="heading-margin headline" itemprop="name headline">{{ page.title | escape }}</div>
+      <div class="heading-margin display1" itemprop="name headline">{{ page.title | escape }}</div>
       <p class="post-meta">
         <time class="caption" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} {{ page.date | date: date_format }}

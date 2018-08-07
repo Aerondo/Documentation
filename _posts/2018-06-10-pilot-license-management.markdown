@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pilot License Management"
+title:  "Pilot License Management Released"
 date:   2018-06-10 11:42:13 +0200
 categories: BlogPost
 tags: Common Pilot-License
